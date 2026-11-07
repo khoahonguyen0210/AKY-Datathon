@@ -1,0 +1,8 @@
+services:
+  sentinel:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      XAI_API_KEY: ${XAI_API_KEY:-}
+      SENTINEL_GROK_MODEL: ${SENTINEL_GROK_MODEL:-grok-4.7}

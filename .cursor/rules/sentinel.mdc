@@ -1,0 +1,6 @@
+---
+description: SENTINEL stays a defensive investigation tool
+globs: backend/**/*.py,frontend/**/*.{ts,tsx}
+---
+
+SENTINEL explains logs. Findings, graph edges, and report statements must cite parsed event ids. Do not add exploit code, payloads, scanners, or vulnerability-validation attacks. Recommendations stay containment and recovery: block an address, disable an account, isolate a host, review a group, preserve the cited events.

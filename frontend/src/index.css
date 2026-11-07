@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-ink: #101410;
+  --color-panel: #171d19;
+  --color-panel-2: #202822;
+  --color-line: #314038;
+  --color-paper: #e7f0ea;
+  --color-mute: #9aafa3;
+  --color-signal: #d6ff4a;
+  --color-danger: #ff5d4a;
+  --color-warn: #ffb020;
+  --color-ok: #3ddc97;
+  --color-sky: #8fd0ff;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  background-image:
+    radial-gradient(ellipse at 0% -10%, rgba(214, 255, 74, 0.09), transparent 42%),
+    linear-gradient(rgba(231, 240, 234, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(231, 240, 234, 0.035) 1px, transparent 1px);
+  background-size: auto, 32px 32px, 32px 32px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.cy-panel .cy-canvas {
+  outline: none;
+}
